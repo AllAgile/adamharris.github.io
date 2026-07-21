@@ -32,13 +32,25 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="bg-blue-950 text-white py-20 sm:py-24 text-center">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold mb-6">Adam Harris – Local Well Respected Professional</h2>
-            <p class="text-xl sm:text-2xl mb-2 text-blue-200">High Quality Painting, Decorating & Professional Spray Solutions</p>
-            <p class="text-base sm:text-lg mb-8 opacity-90">Proudly serving Worcester and surrounding areas for 6 years.</p>
-            <a href="tel:+447983785342" class="inline-block bg-white text-blue-900 text-lg sm:text-xl font-semibold px-8 sm:px-10 py-4 rounded-xl hover:bg-blue-100 transition shadow-lg">Call or WhatsApp: 07983 785342</a>
+    <!-- HERO SECTION WITH SLIDING BACKGROUND PHOTOS -->
+    <section class="relative bg-blue-950 text-white py-24 sm:py-32 text-center overflow-hidden">
+        <!-- Background Image Slider Container -->
+        <div id="hero-slider" class="absolute inset-0 z-0 opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-950/80 to-blue-950 z-10"></div>
+            <!-- Slide 1 -->
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" style="background-image: url('assets/rosiedrake1.jpg');"></div>
+            <!-- Slide 2 -->
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/blueroom1.jpg');"></div>
+            <!-- Slide 3 -->
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/TabithaWilkinson2.jpg');"></div>
+        </div>
+
+        <!-- Hero Content with Semi-Transparent Backdrop Block -->
+        <div class="relative z-20 max-w-4xl mx-auto px-6 bg-blue-950/60 backdrop-blur-sm p-8 sm:p-12 rounded-3xl border border-blue-800/50 shadow-2xl">
+            <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 text-white tracking-tight drop-shadow-md">Adam Harris – Local Well Respected Professional</h2>
+            <p class="text-xl sm:text-2xl mb-3 text-blue-200 font-medium">High Quality Painting, Decorating & Professional Spray Solutions</p>
+            <p class="text-base sm:text-lg mb-8 text-gray-200 opacity-95">Proudly serving Worcester and surrounding areas for 6 years.</p>
+            <a href="tel:+447983785342" class="inline-block bg-white text-blue-900 text-lg sm:text-xl font-semibold px-8 sm:px-10 py-4 rounded-xl hover:bg-blue-100 transition shadow-lg transform hover:-translate-y-0.5">Call or WhatsApp: 07983 785342</a>
         </div>
     </section>
 
@@ -292,5 +304,20 @@
         <p>&copy; 2026 Adam Harris Painting, Decorating & Spray Solutions • Worcester, UK</p>
     </footer>
 
+    <!-- SIMPLE JAVASCRIPT SLIDER EFFECT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const slides = document.querySelectorAll('.hero-slide');
+            let currentSlide = 0;
+            
+            if(slides.length > 0) {
+                setInterval(() => {
+                    slides[currentSlide].style.opacity = '0';
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].style.opacity = '1';
+                }, 5000); // Changes background photo every 5 seconds
+            }
+        });
+    </script>
 </body>
 </html>
