@@ -3,69 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A. Harris Painting & Decorating | Worcester</title>
+    <title>A. Harris Painting, Decorating & Spray Solutions | Worcester</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="description" content="Professional painting and decorating services in Worcester. Interior, exterior, spraying & more. Free quotes.">
+    <meta name="description" content="Professional painting, decorating, and spray solutions in Worcester. Interior, exterior, and bespoke spray facility. Free quotes.">
 </head>
-<body class="bg-gray-50 font-sans">
-    <header class="bg-blue-900 text-white py-4 sticky top-0 z-50">
+<body class="bg-gray-50 font-sans text-gray-800">
+    
+    <!-- HEADER -->
+    <header class="bg-blue-900 text-white py-4 sticky top-0 z-50 shadow-md">
         <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-blue-900 font-bold text-2xl">AH</div>
+            <div class="flex items-center gap-4">
+                <!-- Replaced text placeholder with actual logo -->
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center overflow-hidden border-2 border-white">
+                    <img src="aharrislogo.jpg" alt="A. Harris Logo" class="w-full h-full object-cover">
+                </div>
                 <div>
                     <h1 class="text-2xl font-bold">A. Harris</h1>
-                    <p class="text-sm -mt-1">Painting & Decorating</p>
+                    <p class="text-sm -mt-1 text-blue-200">Painting & Decorating</p>
                 </div>
             </div>
-            <nav class="hidden md:flex gap-8 text-lg">
-                <a href="#services" class="hover:text-blue-300">Services</a>
-                <a href="#gallery" class="hover:text-blue-300">Gallery</a>
-                <a href="#about" class="hover:text-blue-300">About</a>
-                <a href="#contact" class="hover:text-blue-300">Contact</a>
+            <nav class="hidden md:flex gap-8 text-lg font-medium">
+                <a href="#services" class="hover:text-blue-300 transition">Services</a>
+                <a href="#gallery" class="hover:text-blue-300 transition">Gallery</a>
+                <a href="#about" class="hover:text-blue-300 transition">About</a>
+                <a href="#contact" class="hover:text-blue-300 transition">Contact</a>
             </nav>
-            <a href="tel:+447983785342" class="bg-white text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-blue-100">Call Now</a>
+            <a href="tel:+447983785342" class="bg-white text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-blue-100 transition shadow">Call Now</a>
         </div>
     </header>
 
+    <!-- HERO SECTION -->
     <section class="bg-blue-950 text-white py-24 text-center">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-5xl md:text-6xl font-bold mb-6">Professional Painting & Decorating in Worcester</h2>
-            <p class="text-2xl mb-8">Reliable • High Quality • Local</p>
-            <a href="tel:+447983785342" class="inline-block bg-white text-blue-900 text-xl font-semibold px-10 py-4 rounded-xl hover:bg-blue-100">Call 07983 785342</a>
+            <p class="text-2xl mb-2 text-blue-200">Reliable • High Quality • Local</p>
+            <p class="text-lg mb-8 opacity-90">Proudly serving Worcester and surrounding areas for 6 years.</p>
+            <a href="tel:+447983785342" class="inline-block bg-white text-blue-900 text-xl font-semibold px-10 py-4 rounded-xl hover:bg-blue-100 transition shadow-lg">Call or WhatsApp: 07983 785342</a>
         </div>
     </section>
 
+    <!-- SERVICES -->
     <section id="services" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Services</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-950">Our Services</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-2xl">
-                    <h3 class="text-2xl font-semibold mb-4">Interior Painting</h3>
-                    <p class="text-gray-600">Walls, ceilings, woodwork & full room makeovers.</p>
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-900">Interior Painting</h3>
+                    <p class="text-gray-600 leading-relaxed">Walls, ceilings, woodwork & full room makeovers executed to the highest standard.</p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-2xl">
-                    <h3 class="text-2xl font-semibold mb-4">Exterior Painting</h3>
-                    <p class="text-gray-600">Fascias, doors, windows & property exteriors.</p>
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-900">Exterior Painting</h3>
+                    <p class="text-gray-600 leading-relaxed">Fascias, doors, windows & property exteriors protected and transformed.</p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-2xl">
-                    <h3 class="text-2xl font-semibold mb-4">Spray Painting</h3>
-                    <p class="text-gray-600">Professional spray facility for smooth finishes. </p>
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-900">Spray Solutions</h3>
+                    <p class="text-gray-600 leading-relaxed">Dedicated professional spray facility for flawless finishes, industrial coatings, and bespoke projects.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 bg-blue-900 text-white text-center">
-        <div class="max-w-md mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-8">Get a Free Quote</h2>
-            <a href="tel:+447983785342" class="block text-4xl font-bold mb-4">07983 785342</a>
-            <a href="mailto:a.h.painting@outlook.com" class="block text-xl underline">a.h.painting@outlook.com</a>
-            <p class="mt-8 text-sm opacity-75">Worcester & Surrounding Areas</p>
+    <!-- ABOUT & NEWS (NEW SECTION) -->
+    <section id="about" class="py-20 bg-blue-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-8 text-blue-950">Company News: A. Harris Spraying Solutions</h2>
+            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-sm text-lg text-gray-700 leading-relaxed">
+                <p class="mb-4"><strong>The exciting news I have been waiting to tell everyone!</strong></p>
+                <p class="mb-4">I know a lot of my closest know about expanding my business. I would like to inform you all I have set up another business to go alongside my painting and decorating company. I have opened up a new spray facility in Worcester.</p>
+                <p class="mb-4">Welcome to <strong>A. Harris Spraying Solutions</strong>, your trusted partner for high-quality spray finishing and coating solutions. We specialise in delivering professional spray services with a focus on precision, durability, and exceptional craftsmanship.</p>
+                <p class="mb-4">Our facility is equipped with modern technology and designed to handle projects of all sizes, ensuring consistent results across a wide range of applications. Whether you require industrial coatings, commercial finishing, or bespoke spray solutions, our experienced team is committed to meeting the highest standards of quality and efficiency.</p>
+                <p class="mb-4">At A. Harris Spraying Solutions we understand that every project is unique. That's why we work closely with our clients to provide tailored solutions that enhance appearance, improve protection, and add long-term value. Customer satisfaction, reliability, and attention to detail are at the heart of everything we do.</p>
+                <p class="mb-4">We are proud to serve businesses and individuals who demand outstanding finishes and dependable service. We look forward to helping bring your projects to life with professional spray solutions you can trust.</p>
+                <p class="mb-6 font-semibold text-blue-900">Please keep following our page for news of our open day where we will be having the leading specialists within our industry there with ourselves to show you around our new facility and show you what we offer.</p>
+                <p class="text-center font-bold text-xl italic text-blue-900">Thank you again to everyone for the continued support!</p>
+            </div>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-gray-400 py-8 text-center">
-        <p>&copy; 2026 A. Harris Painting & Decorating • Worcester, UK</p>
+    <!-- GALLERY (NEW SECTION) -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-950">Recent Work</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="overflow-hidden rounded-2xl shadow-md group">
+                    <img src="blueroom.jpg" alt="Living room newly painted in a deep blue" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-md group">
+                    <img src="blueroom2.jpg" alt="Living room newly painted in a deep blue showing fireplace and door" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                </div>
+            </div>
+            <p class="text-center mt-8 text-gray-500 italic">More project photos coming soon...</p>
+        </div>
+    </section>
+
+    <!-- REVIEWS (NEW SECTION) -->
+    <section class="py-20 bg-blue-900 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-10">What Our Customers Say</h2>
+            <div class="bg-blue-800 p-8 rounded-2xl shadow-lg relative">
+                <div class="text-yellow-400 text-2xl mb-4">★★★★★</div>
+                <blockquote class="text-xl md:text-2xl font-light italic mb-6">
+                    "Excellent service very professional. Immaculate painting. I’m so impressed I’ll never paint anything myself again. Very reasonable price too. A***"
+                </blockquote>
+                <p class="font-bold">— Leanne Jenkins <span class="font-normal opacity-75">(via Facebook)</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & FOOTER -->
+    <section id="contact" class="py-20 bg-gray-900 text-white text-center">
+        <div class="max-w-md mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-8">Get a Free Quote</h2>
+            
+            <div class="space-y-6 mb-8">
+                <div>
+                    <p class="text-gray-400 uppercase text-sm tracking-wider mb-1">Call or WhatsApp</p>
+                    <a href="tel:+447983785342" class="block text-4xl font-bold hover:text-blue-400 transition">07983 785342</a>
+                </div>
+                
+                <div>
+                    <p class="text-gray-400 uppercase text-sm tracking-wider mb-1">Email</p>
+                    <a href="mailto:a.h.painting@outlook.com" class="block text-xl hover:text-blue-400 transition">a.h.painting@outlook.com</a>
+                </div>
+
+                <div>
+                    <p class="text-gray-400 uppercase text-sm tracking-wider mb-1">Social</p>
+                    <a href="https://www.facebook.com/profile.php?id=100039709257164" target="_blank" rel="noopener noreferrer" class="inline-block text-lg bg-blue-600 hover:bg-blue-500 px-6 py-2 rounded-lg font-semibold transition mt-2">
+                        Follow us on Facebook
+                    </a>
+                </div>
+            </div>
+
+            <p class="mt-12 text-sm text-gray-400 border-t border-gray-800 pt-8">Serving Worcester & Surrounding Areas • Established 6 Years</p>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-500 py-6 text-center text-sm">
+        <p>&copy; 2026 A. Harris Painting, Decorating & Spray Solutions • Worcester, UK</p>
     </footer>
+
 </body>
 </html>
