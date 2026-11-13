@@ -1,39 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-pt-24">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A. Harris | Painting, Decorating & Spray Solutions Worcester</title>
     <meta name="description" content="Adam Harris - Professional painting, decorating and spray solutions in Worcester. Free quotes. High quality work for homes and businesses.">
+    <link rel="canonical" href="https://allagile.github.io/adamharris.github.io/">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="preload" as="image" href="assets/rosiedrake1.jpg" fetchpriority="high">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="A. Harris Painting, Decorating & Spray Solutions">
+    <meta property="og:title" content="A. Harris | Painting, Decorating & Spray Solutions Worcester">
+    <meta property="og:description" content="Adam Harris - Professional painting, decorating and spray solutions in Worcester. Free quotes. High quality work for homes and businesses.">
+    <meta property="og:url" content="https://allagile.github.io/adamharris.github.io/">
+    <meta property="og:image" content="https://allagile.github.io/adamharris.github.io/aharrislogo.jpg">
+    <meta property="og:image:alt" content="A. Harris Painting, Decorating and Spray Solutions logo">
+    <meta property="og:image:width" content="1300">
+    <meta property="og:image:height" content="1050">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A. Harris | Painting, Decorating & Spray Solutions Worcester">
+    <meta name="twitter:description" content="Adam Harris - Professional painting, decorating and spray solutions in Worcester. Free quotes. High quality work for homes and businesses.">
+    <meta name="twitter:image" content="https://allagile.github.io/adamharris.github.io/aharrislogo.jpg">
+    <meta name="twitter:image:alt" content="A. Harris Painting, Decorating and Spray Solutions logo">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": ["LocalBusiness", "HousePainter"],
+        "name": "A. Harris Painting, Decorating & Spray Solutions",
+        "url": "https://allagile.github.io/adamharris.github.io/",
+        "telephone": "+447983785342",
+        "email": "a.h.painting@outlook.com",
+        "image": "https://allagile.github.io/adamharris.github.io/aharrislogo.jpg",
+        "areaServed": "Worcester",
+        "sameAs": "https://www.facebook.com/profile.php?id=100039709257164"
+    }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 font-sans text-gray-800">
 
     <!-- HEADER -->
-    <header class="bg-blue-900 text-white py-3 sticky top-0 z-50 shadow-md">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex justify-between items-center gap-2">
-            <div class="flex items-center gap-3 min-w-0 flex-1">
+    <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center gap-x-2 gap-y-1">
+            <div class="flex items-center gap-3 min-w-0 flex-1 order-1">
                 <div class="w-12 h-12 sm:w-16 sm:h-16 aspect-square flex-shrink-0 bg-white rounded-full flex items-center justify-center overflow-hidden border-2 border-white shadow-sm">
                     <img src="aharrislogo.jpg" alt="A. Harris Logo" class="w-full h-full object-cover">
                 </div>
                 <div class="min-w-0 flex-1">
                     <h1 class="text-base sm:text-2xl font-bold truncate">A. Harris</h1>
-                    <p class="text-xs sm:text-sm text-blue-200 truncate">Painting • Decorating • Spray Solutions</p>
+                    <p class="hidden sm:block md:hidden lg:block text-xs sm:text-sm text-blue-200">Painting • Decorating • Spray Solutions</p>
                 </div>
             </div>
-            <nav class="hidden md:flex gap-6 text-base font-medium">
-                <a href="#services" class="hover:text-blue-300 transition">Services</a>
-                <a href="#gallery" class="hover:text-blue-300 transition">Gallery</a>
-                <a href="#about" class="hover:text-blue-300 transition">About</a>
-                <a href="#reviews" class="hover:text-blue-300 transition">Reviews</a>
-                <a href="#contact" class="hover:text-blue-300 transition">Contact</a>
+            <div class="flex items-center gap-2 flex-shrink-0 order-2 md:order-3">
+                <a href="tel:+447983785342" class="bg-white text-blue-900 px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-blue-100 transition shadow text-sm sm:text-base">
+                    Call Now
+                </a>
+                <button type="button" id="nav-toggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                    <svg id="nav-icon-open" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+                    </svg>
+                    <svg id="nav-icon-close" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/>
+                    </svg>
+                </button>
+            </div>
+            <nav id="site-nav" class="order-3 hidden basis-full flex-col border-t border-blue-800 pt-2 text-base font-medium md:order-2 md:flex md:basis-auto md:flex-row md:items-center md:gap-6 md:border-0 md:pt-0" aria-label="Primary">
+                <a href="#services" class="block py-2 hover:text-blue-300 transition md:py-0">Services</a>
+                <a href="#gallery" class="block py-2 hover:text-blue-300 transition md:py-0">Gallery</a>
+                <a href="#about" class="block py-2 hover:text-blue-300 transition md:py-0">About</a>
+                <a href="#reviews" class="block py-2 hover:text-blue-300 transition md:py-0">Reviews</a>
+                <a href="#contact" class="block py-2 hover:text-blue-300 transition md:py-0">Contact</a>
             </nav>
-            <a href="tel:+447983785342" class="bg-white text-blue-900 px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-blue-100 transition shadow text-sm sm:text-base flex-shrink-0">
-                Call Now
-            </a>
         </div>
     </header>
 
+    <main>
     <!-- HERO -->
     <section class="relative bg-blue-950 text-white py-24 sm:py-32 text-center overflow-hidden">
         <div id="hero-slider" class="absolute inset-0 z-0 opacity-70">
@@ -49,9 +92,14 @@
             <p class="text-base sm:text-lg mb-8 text-gray-100 font-medium drop-shadow-md">
                 Proudly serving Worcester and surrounding areas for 6 years.
             </p>
-            <a href="tel:+447983785342" class="inline-block bg-white text-blue-900 text-sm sm:text-lg font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-blue-100 transition shadow-lg">
-                Call or WhatsApp: <span class="font-bold">07983 785342</span>
-            </a>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <a href="tel:+447983785342" class="inline-block bg-white text-blue-900 text-sm sm:text-lg font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-blue-100 transition shadow-lg">
+                    Call: <span class="font-bold">07983 785342</span>
+                </a>
+                <a href="https://wa.me/447983785342" target="_blank" rel="noopener" class="inline-block bg-white text-blue-900 text-sm sm:text-lg font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-blue-100 transition shadow-lg">
+                    WhatsApp
+                </a>
+            </div>
         </div>
     </section>
 
@@ -92,28 +140,28 @@
             <h2 class="text-4xl font-bold text-center mb-12 text-blue-950">Our Recent Work</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/rosiedrake1.jpg" alt="Modern Kitchen Painting Project" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <img src="assets/rosiedrake1.jpg" alt="Modern Kitchen Painting Project" width="1536" height="2048" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/rosiedrake2.jpg" alt="Bathroom Decorating Project" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <img src="assets/rosiedrake2.jpg" alt="Bathroom Decorating Project" width="1536" height="2048" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/blueroom1.jpg" alt="Blue Living Room Interior" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <img src="assets/blueroom1.jpg" alt="Blue Living Room Interior" width="3013" height="1392" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/blueroom2.jpg" alt="Blue Living Room Feature Wall" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <img src="assets/blueroom2.jpg" alt="Blue Living Room Feature Wall" width="3013" height="1392" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/TabithaWilkinson1.jpg" alt="Dining Area and Living Space" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <img src="assets/TabithaWilkinson1.jpg" alt="Dining Area and Living Space" width="1536" height="2048" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/TabithaWilkinson2.jpg" alt="Commercial Hair Salon Project" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <img src="assets/TabithaWilkinson2.jpg" alt="Commercial Hair Salon Project" width="1101" height="788" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/TabithaWilkinson3.jpg" alt="Grey Hallway and Kitchen Interior" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <img src="assets/TabithaWilkinson3.jpg" alt="Grey Hallway and Kitchen Interior" width="1536" height="2048" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/TabithaWilkinson4.jpg" alt="White Spa Treatment Room" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <img src="assets/TabithaWilkinson4.jpg" alt="White Spa Treatment Room" width="1170" height="776" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
                 </div>
             </div>
         </div>
@@ -170,7 +218,7 @@
                         </blockquote>
                     </div>
                     <div class="flex items-center mt-2 border-t border-blue-700 pt-4">
-                        <img src="people/LeanneJenkins.jpg" alt="Leanne Jenkins" class="w-12 h-12 rounded-full object-cover border-2 border-blue-400 mr-4">
+                        <img src="people/LeanneJenkins.jpg" alt="Leanne Jenkins" width="960" height="960" loading="lazy" class="w-12 h-12 rounded-full object-cover border-2 border-blue-400 mr-4">
                         <div>
                             <p class="font-bold">Leanne Jenkins</p>
                             <p class="text-sm opacity-75">via Facebook</p>
@@ -186,7 +234,7 @@
                         </blockquote>
                     </div>
                     <div class="flex items-center mt-2 border-t border-blue-700 pt-4">
-                        <img src="people/MatthewHill.jpg" alt="Matthew Hill" class="w-12 h-12 rounded-full object-cover border-2 border-blue-400 mr-4">
+                        <img src="people/MatthewHill.jpg" alt="Matthew Hill" width="2048" height="2048" loading="lazy" class="w-12 h-12 rounded-full object-cover border-2 border-blue-400 mr-4">
                         <div>
                             <p class="font-bold">Matthew Hill</p>
                             <p class="text-sm opacity-75">via Facebook</p>
@@ -202,7 +250,7 @@
                         </blockquote>
                     </div>
                     <div class="flex items-center mt-2 border-t border-blue-700 pt-4">
-                        <img src="people/RosieDrake.jpg" alt="Rosie Drake" class="w-12 h-12 rounded-full object-cover border-2 border-blue-400 mr-4">
+                        <img src="people/RosieDrake.jpg" alt="Rosie Drake" width="720" height="720" loading="lazy" class="w-12 h-12 rounded-full object-cover border-2 border-blue-400 mr-4">
                         <div>
                             <p class="font-bold">Rosie Drake</p>
                             <p class="text-sm opacity-75">via Facebook</p>
@@ -228,6 +276,7 @@
                     <div>
                         <p class="text-gray-400 uppercase text-sm tracking-wider mb-1">Call or WhatsApp</p>
                         <a href="tel:+447983785342" class="text-3xl font-bold hover:text-blue-400 transition">07983 785342</a>
+                        <a href="https://wa.me/447983785342" target="_blank" rel="noopener" class="block mt-2 text-lg font-semibold text-blue-300 hover:text-blue-200 transition">WhatsApp</a>
                     </div>
                     <div>
                         <p class="text-gray-400 uppercase text-sm tracking-wider mb-1">Email</p>
@@ -240,49 +289,51 @@
                             Follow on Facebook
                         </a>
                     </div>
-                    <p class="text-sm text-gray-500 pt-4">
+                    <p class="text-sm text-gray-400 pt-4">
                         Serving Worcester & surrounding areas • Established 6 years
                     </p>
                 </div>
 
                 <div class="bg-gray-800 p-8 rounded-2xl">
+                    <!-- Needs a real Formspree form ID. Replace YOUR_FORM_ID before this form can send enquiries. -->
                     <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-5">
                         <div>
-                            <label class="block text-sm text-gray-400 mb-1">Name</label>
-                            <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-blue-400">
+                            <label for="quote-name" class="block text-sm text-gray-400 mb-1">Name</label>
+                            <input id="quote-name" type="text" name="name" required class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-blue-400">
                         </div>
                         <div>
-                            <label class="block text-sm text-gray-400 mb-1">Phone or Email</label>
-                            <input type="text" name="contact" required class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-blue-400">
+                            <label for="quote-contact" class="block text-sm text-gray-400 mb-1">Phone or Email</label>
+                            <input id="quote-contact" type="text" name="contact" required class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-blue-400">
                         </div>
                         <div>
-                            <label class="block text-sm text-gray-400 mb-1">Service needed</label>
-                            <select name="service" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-blue-400">
+                            <label for="quote-service" class="block text-sm text-gray-400 mb-1">Service needed</label>
+                            <select id="quote-service" name="service" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-blue-400">
                                 <option>Painting & Decorating</option>
                                 <option>Spray Solutions</option>
                                 <option>Not sure yet</option>
                             </select>
                         </div>
                         <div>
-                            <label class="block text-sm text-gray-400 mb-1">Message (optional)</label>
-                            <textarea name="message" rows="3" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-blue-400"></textarea>
+                            <label for="quote-message" class="block text-sm text-gray-400 mb-1">Message (optional)</label>
+                            <textarea id="quote-message" name="message" rows="3" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-blue-400"></textarea>
                         </div>
                         <button type="submit" class="w-full bg-white text-blue-900 font-bold py-3 rounded-lg hover:bg-blue-100 transition">
                             Send Enquiry
                         </button>
                     </form>
-                    <p class="text-xs text-gray-500 mt-4 text-center">I’ll get back to you as soon as possible.</p>
+                    <p class="text-xs text-gray-400 mt-4 text-center">I’ll get back to you as soon as possible.</p>
                 </div>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- FOOTER -->
-    <footer class="bg-black text-gray-500 py-6 text-center text-sm">
+    <footer class="bg-black text-gray-400 py-6 text-center text-sm">
         <p>&copy; 2026 A. Harris Painting, Decorating & Spray Solutions • Worcester, UK</p>
     </footer>
 
-    <!-- SLIDER SCRIPT -->
+    <!-- SLIDER AND MOBILE NAV -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const slides = document.querySelectorAll('.hero-slide');
@@ -293,6 +344,31 @@
                     currentSlide = (currentSlide + 1) % slides.length;
                     slides[currentSlide].style.opacity = '1';
                 }, 5000);
+            }
+
+            const navToggle = document.getElementById("nav-toggle");
+            const siteNav = document.getElementById("site-nav");
+            if (navToggle && siteNav) {
+                const openIcon = document.getElementById("nav-icon-open");
+                const closeIcon = document.getElementById("nav-icon-close");
+                const setOpen = function(open) {
+                    navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+                    navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+                    siteNav.classList.toggle("hidden", !open);
+                    if (openIcon) openIcon.classList.toggle("hidden", open);
+                    if (closeIcon) closeIcon.classList.toggle("hidden", !open);
+                };
+                navToggle.addEventListener("click", function() {
+                    setOpen(navToggle.getAttribute("aria-expanded") !== "true");
+                });
+                siteNav.querySelectorAll("a").forEach(function(link) {
+                    link.addEventListener("click", function() {
+                        setOpen(false);
+                    });
+                });
+                document.addEventListener("keydown", function(event) {
+                    if (event.key === "Escape") setOpen(false);
+                });
             }
         });
     </script>
