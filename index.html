@@ -9,7 +9,7 @@
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="preload" as="image" href="assets/rosiedrake1.jpg" fetchpriority="high">
+    <link rel="preload" as="image" type="image/webp" fetchpriority="high" imagesrcset="assets/opt/rosiedrake1-hm.webp 960w, assets/opt/rosiedrake1-hd.webp 1536w" imagesizes="100vw">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="A. Harris Painting, Decorating & Spray Solutions">
     <meta property="og:title" content="A. Harris | Painting, Decorating & Spray Solutions Worcester">
@@ -46,7 +46,10 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center gap-x-2 gap-y-1">
             <div class="flex items-center gap-3 min-w-0 flex-1 order-1">
                 <div class="w-12 h-12 sm:w-16 sm:h-16 aspect-square flex-shrink-0 bg-white rounded-full flex items-center justify-center overflow-hidden border-2 border-white shadow-sm">
-                    <img src="aharrislogo.jpg" alt="A. Harris Logo" class="w-full h-full object-cover">
+                    <picture class="block w-full h-full">
+                        <source type="image/webp" srcset="assets/opt/logo-64.webp 64w, assets/opt/logo-128.webp 128w" sizes="(min-width: 640px) 64px, 48px">
+                        <img src="assets/opt/logo-128.jpg" srcset="assets/opt/logo-64.jpg 64w, assets/opt/logo-128.jpg 128w" sizes="(min-width: 640px) 64px, 48px" alt="A. Harris Logo" width="128" height="128" class="w-full h-full object-cover">
+                    </picture>
                 </div>
                 <div class="min-w-0 flex-1">
                     <h1 class="text-base sm:text-2xl font-bold truncate">A. Harris</h1>
@@ -80,10 +83,15 @@
     <!-- HERO -->
     <section class="relative bg-blue-950 text-white py-24 sm:py-32 text-center overflow-hidden">
         <div id="hero-slider" class="absolute inset-0 z-0 opacity-70">
-            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" style="background-image: url('assets/rosiedrake1.jpg');"></div>
-            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/blueroom1.jpg');"></div>
-            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/TabithaWilkinson2.jpg');"></div>
-            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/rosiedrake2.jpg');"></div>
+            <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-100">
+                <picture>
+                    <source type="image/webp" srcset="assets/opt/rosiedrake1-hm.webp 960w, assets/opt/rosiedrake1-hd.webp 1536w" sizes="100vw">
+                    <img src="assets/opt/rosiedrake1-hm.jpg" srcset="assets/opt/rosiedrake1-hm.jpg 960w, assets/opt/rosiedrake1-hd.jpg 1536w" sizes="100vw" alt="" width="1536" height="2048" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover">
+                </picture>
+            </div>
+            <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0" data-webp="assets/opt/blueroom1-hm.webp" data-jpg="assets/opt/blueroom1-hm.jpg" data-fallback="assets/opt/blueroom1-hm.jpg" data-w="3013" data-h="1392"></div>
+            <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0" data-webp="assets/opt/TabithaWilkinson2-hm.webp" data-jpg="assets/opt/TabithaWilkinson2-hm.jpg" data-fallback="assets/opt/TabithaWilkinson2-hm.jpg" data-w="1101" data-h="788"></div>
+            <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0" data-webp="assets/opt/rosiedrake2-hm.webp 960w, assets/opt/rosiedrake2-hd.webp 1536w" data-jpg="assets/opt/rosiedrake2-hm.jpg 960w, assets/opt/rosiedrake2-hd.jpg 1536w" data-fallback="assets/opt/rosiedrake2-hm.jpg" data-sizes="100vw" data-w="1536" data-h="2048"></div>
         </div>
         <div class="relative z-20 max-w-4xl mx-auto px-6 bg-blue-950/40 backdrop-blur-md p-8 sm:p-12 rounded-3xl border border-white/20 shadow-2xl">
             <h2 class="text-4xl sm:text-5xl font-extrabold mb-6 text-white tracking-tight drop-shadow-lg">
@@ -140,28 +148,52 @@
             <h2 class="text-4xl font-bold text-center mb-12 text-blue-950">Our Recent Work</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/rosiedrake1.jpg" alt="Modern Kitchen Painting Project" width="1536" height="2048" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <picture class="block w-full">
+                        <source type="image/webp" srcset="assets/opt/rosiedrake1-g1x.webp 1x, assets/opt/rosiedrake1-hm.webp 2x">
+                        <img src="assets/opt/rosiedrake1-g1x.jpg" srcset="assets/opt/rosiedrake1-g1x.jpg 1x, assets/opt/rosiedrake1-hm.jpg 2x" alt="Modern Kitchen Painting Project" width="1536" height="2048" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    </picture>
                 </div>
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/rosiedrake2.jpg" alt="Bathroom Decorating Project" width="1536" height="2048" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <picture class="block w-full">
+                        <source type="image/webp" srcset="assets/opt/rosiedrake2-g1x.webp 1x, assets/opt/rosiedrake2-hm.webp 2x">
+                        <img src="assets/opt/rosiedrake2-g1x.jpg" srcset="assets/opt/rosiedrake2-g1x.jpg 1x, assets/opt/rosiedrake2-hm.jpg 2x" alt="Bathroom Decorating Project" width="1536" height="2048" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    </picture>
                 </div>
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/blueroom1.jpg" alt="Blue Living Room Interior" width="3013" height="1392" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <picture class="block w-full">
+                        <source type="image/webp" srcset="assets/opt/blueroom1-g1x.webp 1x, assets/opt/blueroom1-g2x.webp 2x">
+                        <img src="assets/opt/blueroom1-g1x.jpg" srcset="assets/opt/blueroom1-g1x.jpg 1x, assets/opt/blueroom1-g2x.jpg 2x" alt="Blue Living Room Interior" width="3013" height="1392" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    </picture>
                 </div>
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/blueroom2.jpg" alt="Blue Living Room Feature Wall" width="3013" height="1392" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <picture class="block w-full">
+                        <source type="image/webp" srcset="assets/opt/blueroom2-g1x.webp 1x, assets/opt/blueroom2-g2x.webp 2x">
+                        <img src="assets/opt/blueroom2-g1x.jpg" srcset="assets/opt/blueroom2-g1x.jpg 1x, assets/opt/blueroom2-g2x.jpg 2x" alt="Blue Living Room Feature Wall" width="3013" height="1392" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    </picture>
                 </div>
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/TabithaWilkinson1.jpg" alt="Dining Area and Living Space" width="1536" height="2048" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <picture class="block w-full">
+                        <source type="image/webp" srcset="assets/opt/TabithaWilkinson1-g1x.webp 1x, assets/opt/TabithaWilkinson1-g2x.webp 2x">
+                        <img src="assets/opt/TabithaWilkinson1-g1x.jpg" srcset="assets/opt/TabithaWilkinson1-g1x.jpg 1x, assets/opt/TabithaWilkinson1-g2x.jpg 2x" alt="Dining Area and Living Space" width="1536" height="2048" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    </picture>
                 </div>
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/TabithaWilkinson2.jpg" alt="Commercial Hair Salon Project" width="1101" height="788" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <picture class="block w-full">
+                        <source type="image/webp" srcset="assets/opt/TabithaWilkinson2-g1x.webp 1x, assets/opt/TabithaWilkinson2-hm.webp 2x">
+                        <img src="assets/opt/TabithaWilkinson2-g1x.jpg" srcset="assets/opt/TabithaWilkinson2-g1x.jpg 1x, assets/opt/TabithaWilkinson2-hm.jpg 2x" alt="Commercial Hair Salon Project" width="1101" height="788" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    </picture>
                 </div>
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/TabithaWilkinson3.jpg" alt="Grey Hallway and Kitchen Interior" width="1536" height="2048" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <picture class="block w-full">
+                        <source type="image/webp" srcset="assets/opt/TabithaWilkinson3-g1x.webp 1x, assets/opt/TabithaWilkinson3-g2x.webp 2x">
+                        <img src="assets/opt/TabithaWilkinson3-g1x.jpg" srcset="assets/opt/TabithaWilkinson3-g1x.jpg 1x, assets/opt/TabithaWilkinson3-g2x.jpg 2x" alt="Grey Hallway and Kitchen Interior" width="1536" height="2048" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    </picture>
                 </div>
                 <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition group bg-white">
-                    <img src="assets/TabithaWilkinson4.jpg" alt="White Spa Treatment Room" width="1170" height="776" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    <picture class="block w-full">
+                        <source type="image/webp" srcset="assets/opt/TabithaWilkinson4-g1x.webp 1x, assets/opt/TabithaWilkinson4-g2x.webp 2x">
+                        <img src="assets/opt/TabithaWilkinson4-g1x.jpg" srcset="assets/opt/TabithaWilkinson4-g1x.jpg 1x, assets/opt/TabithaWilkinson4-g2x.jpg 2x" alt="White Spa Treatment Room" width="1170" height="776" loading="lazy" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -218,7 +250,10 @@
                         </blockquote>
                     </div>
                     <div class="flex items-center mt-2 border-t border-blue-700 pt-4">
-                        <img src="people/LeanneJenkins.jpg" alt="Leanne Jenkins" width="960" height="960" loading="lazy" class="w-12 h-12 rounded-full object-cover border-2 border-blue-400 mr-4">
+                        <picture class="contents">
+                            <source type="image/webp" srcset="assets/opt/LeanneJenkins-96.webp 96w, assets/opt/LeanneJenkins-128.webp 128w" sizes="48px">
+                            <img src="assets/opt/LeanneJenkins-96.jpg" srcset="assets/opt/LeanneJenkins-96.jpg 96w, assets/opt/LeanneJenkins-128.jpg 128w" sizes="48px" alt="Leanne Jenkins" width="960" height="960" loading="lazy" class="w-12 h-12 rounded-full object-cover border-2 border-blue-400 mr-4">
+                        </picture>
                         <div>
                             <p class="font-bold">Leanne Jenkins</p>
                             <p class="text-sm opacity-75">via Facebook</p>
@@ -234,7 +269,10 @@
                         </blockquote>
                     </div>
                     <div class="flex items-center mt-2 border-t border-blue-700 pt-4">
-                        <img src="people/MatthewHill.jpg" alt="Matthew Hill" width="2048" height="2048" loading="lazy" class="w-12 h-12 rounded-full object-cover border-2 border-blue-400 mr-4">
+                        <picture class="contents">
+                            <source type="image/webp" srcset="assets/opt/MatthewHill-96.webp 96w, assets/opt/MatthewHill-128.webp 128w" sizes="48px">
+                            <img src="assets/opt/MatthewHill-96.jpg" srcset="assets/opt/MatthewHill-96.jpg 96w, assets/opt/MatthewHill-128.jpg 128w" sizes="48px" alt="Matthew Hill" width="2048" height="2048" loading="lazy" class="w-12 h-12 rounded-full object-cover border-2 border-blue-400 mr-4">
+                        </picture>
                         <div>
                             <p class="font-bold">Matthew Hill</p>
                             <p class="text-sm opacity-75">via Facebook</p>
@@ -250,7 +288,10 @@
                         </blockquote>
                     </div>
                     <div class="flex items-center mt-2 border-t border-blue-700 pt-4">
-                        <img src="people/RosieDrake.jpg" alt="Rosie Drake" width="720" height="720" loading="lazy" class="w-12 h-12 rounded-full object-cover border-2 border-blue-400 mr-4">
+                        <picture class="contents">
+                            <source type="image/webp" srcset="assets/opt/RosieDrake-96.webp 96w, assets/opt/RosieDrake-128.webp 128w" sizes="48px">
+                            <img src="assets/opt/RosieDrake-96.jpg" srcset="assets/opt/RosieDrake-96.jpg 96w, assets/opt/RosieDrake-128.jpg 128w" sizes="48px" alt="Rosie Drake" width="720" height="720" loading="lazy" class="w-12 h-12 rounded-full object-cover border-2 border-blue-400 mr-4">
+                        </picture>
                         <div>
                             <p class="font-bold">Rosie Drake</p>
                             <p class="text-sm opacity-75">via Facebook</p>
@@ -338,10 +379,43 @@
         document.addEventListener("DOMContentLoaded", function() {
             const slides = document.querySelectorAll('.hero-slide');
             let currentSlide = 0;
+            function mountSlide(slide) {
+                if (!slide || slide.dataset.mounted || !slide.dataset.jpg) return;
+                const picture = document.createElement("picture");
+                const source = document.createElement("source");
+                source.type = "image/webp";
+                source.srcset = slide.dataset.webp;
+                if (slide.dataset.sizes) source.sizes = slide.dataset.sizes;
+                const img = document.createElement("img");
+                img.alt = "";
+                img.className = "absolute inset-0 w-full h-full object-cover";
+                img.decoding = "async";
+                if (slide.dataset.w) img.width = slide.dataset.w;
+                if (slide.dataset.h) img.height = slide.dataset.h;
+                if (slide.dataset.sizes) {
+                    img.sizes = slide.dataset.sizes;
+                    img.srcset = slide.dataset.jpg;
+                }
+                img.src = slide.dataset.fallback || slide.dataset.jpg;
+                picture.appendChild(source);
+                picture.appendChild(img);
+                slide.appendChild(picture);
+                slide.dataset.mounted = "1";
+            }
             if (slides.length > 0) {
+                const firstImg = slides[0].querySelector("img");
+                const armNext = function() {
+                    // The first slide is the LCP image. Fetch the following slide
+                    // only after that, and leave the later slides until they are next.
+                    setTimeout(function() { mountSlide(slides[1]); }, 1500);
+                };
+                if (firstImg && firstImg.complete) armNext();
+                else if (firstImg) firstImg.addEventListener("load", armNext, { once: true });
                 setInterval(() => {
                     slides[currentSlide].style.opacity = '0';
                     currentSlide = (currentSlide + 1) % slides.length;
+                    mountSlide(slides[currentSlide]);
+                    mountSlide(slides[(currentSlide + 1) % slides.length]);
                     slides[currentSlide].style.opacity = '1';
                 }, 5000);
             }
